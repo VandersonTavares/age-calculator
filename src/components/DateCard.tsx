@@ -97,8 +97,6 @@ export const DateCard = () => {
                 name="day"
                 onChange={(event) => handleInputChange(event)}
                 type="number"
-                minLength={1}
-                maxLength={2}
                 value={data.day}
               />
             </div>
@@ -111,8 +109,6 @@ export const DateCard = () => {
                 name="month"
                 onChange={(event) => handleInputChange(event)}
                 type="number"
-                minLength={1}
-                maxLength={2}
                 value={data.month}
               />
             </div>
@@ -125,8 +121,6 @@ export const DateCard = () => {
                 name="year"
                 onChange={(event) => handleInputChange(event)}
                 type="number"
-                minLength={1}
-                maxLength={4}
                 value={data.year}
               />
             </div>
