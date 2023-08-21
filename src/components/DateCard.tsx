@@ -130,7 +130,7 @@ export const DateCard = () => {
               <hr className="ml-[28px]" />
             </div>
             <div className="button mr-14 text-[#864cff]">
-              <button onClick={calculated}>
+              <button name="submit-button" onClick={calculated}>
                 <BsArrowDownCircleFill size={60} />
               </button>
             </div>
