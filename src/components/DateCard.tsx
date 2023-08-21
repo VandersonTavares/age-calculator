@@ -87,13 +87,13 @@ export const DateCard = () => {
     <div className="container border h-screen mx-auto flex justify-center items-center">
       <div className="card w-[550px] bg-white rounded-xl rounded-br-[140px]">
         <form onSubmit={handleSubmit}>
-          <div className="top-inputs flex gap-5 ml-7 mt-7">
+          <div className="top-inputs flex sm:gap-5 sm:ml-7 sm:mt-7 gap-1 m-5">
             <div className="day flex flex-col uppercase">
               <span className="mb-2 font-semibold text-xs text-[#727272]">
                 Day
               </span>
               <input
-                className="border border-[#dddddd] w-28 h-12 text-2xl rounded font-bold pl-4"
+                className="border border-[#dddddd] w-16 sm:w-28 h-12 text-2xl rounded font-bold pl-4"
                 name="day"
                 onChange={(event) => handleInputChange(event)}
                 type="number"
@@ -107,7 +107,7 @@ export const DateCard = () => {
                 Month
               </span>
               <input
-                className="border border-[#dddddd] w-28 h-12 text-2xl rounded font-bold pl-4"
+                className="border border-[#dddddd] w-16 sm:w-28 h-12 text-2xl rounded font-bold pl-4"
                 name="month"
                 onChange={(event) => handleInputChange(event)}
                 type="number"
@@ -121,7 +121,7 @@ export const DateCard = () => {
                 Year
               </span>
               <input
-                className="border border-[#dddddd] w-28 h-12 text-2xl rounded font-bold pl-4"
+                className="border border-[#dddddd] w-24 sm:w-28 h-12 text-2xl rounded font-bold pl-4"
                 name="year"
                 onChange={(event) => handleInputChange(event)}
                 type="number"
@@ -141,8 +141,8 @@ export const DateCard = () => {
               </button>
             </div>
           </div>
-          <div className="bot-output flex flex-col text-[80px] italic font-bold ml-7 mb-7">
-            <h1 className=" mb-1">
+          <div className="bot-output flex flex-col sm:text-[80px] text-[60px] italic font-bold ml-7 mb-7">
+            <h1 className="sm:mb-1">
               {" "}
               <span className="text-[#864cff]">{idade.years}</span> Years
             </h1>
