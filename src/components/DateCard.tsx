@@ -92,7 +92,7 @@ export const DateCard = () => {
               <span className="mb-2 font-semibold text-xs text-[#727272]">
                 Day
               </span>
-              <input
+              <input aria-label="day"
                 className="border border-[#dddddd] w-16 sm:w-28 h-12 text-2xl rounded font-bold pl-4"
                 name="day"
                 onChange={(event) => handleInputChange(event)}
@@ -104,7 +104,7 @@ export const DateCard = () => {
               <span className="mb-2 font-semibold text-xs text-[#727272]">
                 Month
               </span>
-              <input
+              <input aria-label="month"
                 className="border border-[#dddddd] w-16 sm:w-28 h-12 text-2xl rounded font-bold pl-4"
                 name="month"
                 onChange={(event) => handleInputChange(event)}
@@ -116,7 +116,7 @@ export const DateCard = () => {
               <span className="mb-2 font-semibold text-xs text-[#727272]">
                 Year
               </span>
-              <input
+              <input aria-label="year"
                 className="border border-[#dddddd] w-24 sm:w-28 h-12 text-2xl rounded font-bold pl-4"
                 name="year"
                 onChange={(event) => handleInputChange(event)}
@@ -130,7 +130,7 @@ export const DateCard = () => {
               <hr className="ml-[28px]" />
             </div>
             <div className="button mr-14 text-[#864cff]">
-              <button name="submit-button" onClick={calculated}>
+              <button id="submit-button" onClick={calculated}>
                 <BsArrowDownCircleFill size={60} />
               </button>
             </div>
